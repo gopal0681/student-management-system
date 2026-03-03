@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const STUDENT_BASE_URL = "http://localhost:8080/api/students";
+const BASE_URL = process.env.REACT_APP_API_URL;
+const STUDENT_BASE_URL = `${BASE_URL}/api/students`;
 
 class StudentService {
 
@@ -13,15 +14,15 @@ class StudentService {
     }
 
     getStudentById(studentId) {
-        return axios.get(STUDENT_BASE_URL + '/' + studentId); 
+        return axios.get(`${STUDENT_BASE_URL}/${studentId}`); 
     }
 
     updateStudent(studentId, student) {
-        return axios.put(STUDENT_BASE_URL + '/' + studentId, student);
+        return axios.put(`${STUDENT_BASE_URL}/${studentId}`, student);
     }
 
     deleteStudent(studentId) {
-        return axios.delete(STUDENT_BASE_URL + '/' + studentId);
+        return axios.delete(`${STUDENT_BASE_URL}/${studentId}`);
     }
 }
 
