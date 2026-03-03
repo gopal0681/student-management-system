@@ -1,0 +1,22 @@
+/* Footer main wrapper */
+.app-footer {
+  width: 100%;
+  background-color: #111827; /* Solid dark */
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Inner container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer text */
+.footer-text {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}

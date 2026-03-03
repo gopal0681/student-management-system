@@ -1,0 +1,75 @@
+/* Header background */
+.app-header {
+  background: linear-gradient(90deg, #1f2933, #111827);
+  padding: 14px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Container */
+.header-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: #38bdf8;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #d1d5db;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect */
+.nav-item:hover {
+  color: #ffffff;
+}
+
+/* Underline animation */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #38bdf8;
+  transition: 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Active link */
+.active {
+  color: #38bdf8;
+}
+
+.active::after {
+  width: 100%;
+}

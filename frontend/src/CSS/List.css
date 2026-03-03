@@ -1,0 +1,107 @@
+/* Main container */
+.list-container {
+  min-height: 80vh;
+  padding: 40px 20px;
+  background-color: #f4f6f9;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card */
+.list-card {
+  width: 100%;
+  max-width: 1000px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.list-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Table wrapper */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.student-table th {
+  background-color: #343a40;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.student-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-update {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-update:hover {
+  background-color: #138496;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+.btn-view {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-view:hover {
+  background-color: #5a6268;
+}
+
+/* No data row */
+.no-data {
+  padding: 20px;
+  color: #777;
+  font-style: italic;
+}   
